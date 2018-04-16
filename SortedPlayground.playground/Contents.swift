@@ -16,7 +16,7 @@ func bubbleSorted<T: Comparable>(_ array:inout [T]) {
     }
 }
 
-// Insertion Sort
+// Insertion Sorted
 func insertionSort<T: Comparable>(_ array:inout [T]) {
     guard array.count > 1 else { return }
     let n = array.count
@@ -32,7 +32,7 @@ func insertionSort<T: Comparable>(_ array:inout [T]) {
 
 }
 
-// merfeSort
+// Merge Sorted
 func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
     guard array.count > 1 else { return array }
     let middleIndex = array.count / 2
@@ -79,7 +79,7 @@ func merge<T: Comparable>(_ left: [T], _ right: [T]) -> [T] {
 }
 
 
-// quick sort
+// Quick Sorted
 func quicksort<T: Comparable>(_ a: [T]) -> [T] {
     guard a.count > 1 else { return a }
 
